@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+            'White': 'hsl(0, 0%, 100% )',
+            'light-gray': 'hsl(212, 45%, 89%)',
+            'Grayish-blue': 'hsl(220, 15%, 55% )',
+            'dark-blue': 'hsl(218, 44%, 22% )',
+              },
+              fontFamily: {sans:'Outfit'}
+              
+            },
+            screens:{
+              desktop:'1440px'
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body class="overflow-hidden flex justify-center place-items-center w-screen px-8 py-24 h-screen bg-light-gray">
+
+    
+    <div class="flex flex-col px-3   gap-4 items-center justify-center w-full py-3 rounded-lg bg-white desktop:w-[350px] ">
+        <img class="rounded-lg  " src="./qr-code-component-main/images/image-qr-code.png" alt="" srcset="">
+        <div class="flex w-full">
+          <h1 class="text-center text-dark-blue font-bold text-lg">Improve your front-end skills by building projects</h1>
+        </div>
+        <div class="">
+          <p class="text-center text-xs text-Grayish-blue">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
